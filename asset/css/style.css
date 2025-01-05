@@ -1,0 +1,37 @@
+
+
+.navbar-nav {
+    text-align: right;
+}
+
+.hero_image {
+    background-image: url('../images/hero_image.png');
+    background-size: cover; /* Ensures the image covers the area */
+    background-position: center center; /* Keeps the image centered */
+    height: 50vh; /* Adjust height (50% of the viewport height) */
+    width: 100%; /* Full width of the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero_image img {
+    display: none; /* Hide the image if using the background-image */
+}
+
+.statement{
+background-color: beige;
+}
+.section_1{
+background-color: blueviolet;
+}
+.section_2{
+    background-color: brown;
+}
+.banner{
+    background-color: chartreuse;
+}
+.footer{
+    background-color: chocolate;
+}
