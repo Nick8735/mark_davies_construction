@@ -1,37 +1,69 @@
+/* Ensure the entire page has a white background */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* White background */
+}
 
-
+/* Navbar adjustments */
 .navbar-nav {
     text-align: right;
+    background-color: #ffffff; /* Ensure navbar background is white */
 }
 
+.navbar-nav .nav-link {
+    color: #333; /* Dark color for the links */
+    padding: 10px 20px; /* Add padding to the links */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff; /* Blue color on hover for links */
+}
+
+/* Hero image */
 .hero_image {
     background-image: url('../images/hero_image.png');
-    background-size: cover; /* Ensures the image covers the area */
-    background-position: center center; /* Keeps the image centered */
-    height: 50vh; /* Adjust height (50% of the viewport height) */
-    width: 100%; /* Full width of the container */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    background-size: cover; /* Cover the entire hero image area */
+    background-position: center center; /* Center the image */
+    height: 50vh; /* 50% of viewport height */
+    width: 100%; /* Full width */
+    background-color: #f0f0f0; /* Fallback color for the hero section */
 }
 
-.hero_image img {
-    display: none; /* Hide the image if using the background-image */
+/* Section colors */
+.statement {
+    background-color: #1d5575; /* Beige background for statement section */
 }
 
-.statement{
-background-color: beige;
+.section_1 {
+    background-color: blueviolet; /* Blueviolet for section 1 */
 }
-.section_1{
-background-color: blueviolet;
+
+.section_2 {
+    background-color: brown; /* Brown for section 2 */
 }
-.section_2{
-    background-color: brown;
+
+.banner {
+    background-color: chartreuse; /* Chartreuse for banner section */
 }
-.banner{
-    background-color: chartreuse;
+
+.footer {
+    background-color: chocolate; /* Chocolate for footer */
 }
-.footer{
-    background-color: chocolate;
+
+/* Banner-2 adjustments */
+.banner-2 {
+    background-color:#1d5575 ; /* Chartreuse for banner section */
+    text-align: right;
+    padding: 20px; /* Add padding inside banner-2 */
+}
+
+/* Adjust navbar within banner-2 */
+.banner-2 .navbar {
+    background-color: transparent; /* Make navbar background transparent inside banner-2 */
+    padding: 0; /* Remove padding to make it fit neatly */
+}
+
+.banner-2 .navbar-nav {
+    margin-right: 30px; /* Add margin on the right side of the navbar */
 }
