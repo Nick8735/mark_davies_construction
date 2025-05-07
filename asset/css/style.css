@@ -25,7 +25,7 @@ html, body {
     background-image: url('../images/hero_image.png');
     background-size: cover; /* Cover the entire hero image area */
     background-position: center center; /* Center the image */
-    height: 50vh; /* 50% of viewport height */
+    height: 70vh; /* 50% of viewport height */
     width: 100%; /* Full width */
     background-color: #f0f0f0; /* Fallback color for the hero section */
 }
@@ -66,4 +66,8 @@ html, body {
 
 .banner-2 .navbar-nav {
     margin-right: 30px; /* Add margin on the right side of the navbar */
+}
+.slog {
+   font-size: 42px;
+   font-family:"'Dancing Script', Consolas, 'Courier New', monospace" ;
 }
