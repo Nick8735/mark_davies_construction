@@ -71,3 +71,34 @@ html, body {
    font-size: 42px;
    font-family:"'Dancing Script', Consolas, 'Courier New', monospace" ;
 }
+
+.video {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.slogan {
+  font-family: "Charm", cursive;
+  font-weight: 700;
+  font-style: normal;
+    text-align: center;
+    font-size: 75px;
+    color: #ffffff;
+}
+.charm-regular {
+  font-family: "Charm", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.charm-bold {
+  font-family: "Charm", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
