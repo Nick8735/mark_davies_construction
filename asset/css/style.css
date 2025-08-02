@@ -128,3 +128,228 @@ html, body {
   border-radius: 8px;    /* Rounded corners to match container */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Optional subtle shadow */
 }
+/* Base styles for desktop/tablet */
+.container.py-5 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Images grid in projects/index */
+.row.g-3 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.col-sm-6.col-md-4 {
+  flex: 0 0 calc(33.333% - 1rem); /* 3 columns for medium and up */
+}
+
+/* Responsive adjustments for phones */
+@media (max-width: 767.98px) {
+  .col-sm-6.col-md-4 {
+    flex: 0 0 100%; /* Full width on small devices */
+    max-width: 100%;
+  }
+
+  .container.py-5 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  h2.text-center.mb-4 {
+    font-size: 1.5rem; /* Slightly smaller heading */
+    margin-bottom: 1rem;
+  }
+
+  img.img-fluid.rounded.shadow-sm {
+    width: 100%; /* Make sure images fill their container */
+    height: auto;
+  }
+}
+
+/* Optional: Slightly larger on tablets */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .col-sm-6.col-md-4 {
+    flex: 0 0 calc(50% - 1rem); /* 2 columns on tablets */
+    max-width: calc(50% - 1rem);
+  }
+}
+/* Base desktop/tablet styles */
+.container.py-5 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h2.slogan {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.video {
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+p {
+  max-width: 800px;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  text-align: center;
+  margin: 1rem auto;
+  padding: 0 15px;
+}
+
+/* Navbar adjustments */
+.navbar-brand img {
+  max-width: 150px;
+  height: auto;
+}
+
+/* Hero section */
+.hero_image {
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+/* Media Queries for phones */
+@media (max-width: 767.98px) {
+  
+  h2.slogan {
+    font-size: 2rem;
+    padding: 0 10px;
+  }
+  
+  .video {
+    max-width: 100%;
+    height: auto;
+    margin: 0 10px;
+  }
+  
+  p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+  
+  .container.py-5 {
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: none; /* Optional: simpler on small screens */
+    border-radius: 0;
+  }
+  
+  .navbar-brand img {
+    max-width: 120px;
+  }
+  
+  .hero_image {
+    min-height: 250px;
+  }
+  
+  /* Navbar links stack vertically on small screens */
+  .navbar-nav.ms-auto {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .navbar-nav.ms-auto .nav-link {
+    padding: 0.5rem 0;
+  }
+}
+/* Base styles for desktop/tablet */
+
+.navbar-brand img {
+  max-width: 250px;
+  height: auto;
+}
+
+.video {
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  margin: 1rem auto;
+  display: block;
+}
+
+.statement p,
+.section_1 p,
+.section_2 p,
+.banner p {
+  max-width: 800px;
+  margin: 1rem auto;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  text-align: center;
+  padding: 0 15px;
+}
+
+/* Hero Image */
+.hero_image {
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+/* Media Queries for phones */
+@media (max-width: 767.98px) {
+  
+  .navbar-brand img {
+    max-width: 150px;
+  }
+
+  .navbar-nav.ms-auto {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-nav.ms-auto .nav-link {
+    padding: 0.5rem 0;
+  }
+
+  .video {
+    max-width: 100%;
+    margin: 0 10px 1.5rem 10px;
+    border-radius: 5px;
+  }
+
+  .statement p,
+  .section_1 p,
+  .section_2 p,
+  .banner p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .hero_image {
+    min-height: 250px;
+  }
+}
