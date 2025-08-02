@@ -90,7 +90,18 @@ html, body {
 
 
 .section_2 {
-    background-color: brown; /* Brown for section 2 */
+    background-color: #1d5575
+    ; /* Brown for section 2 */
+}
+
+.section_2 .container_2{
+    max-width: 800px; /* Limit the width of the text container */
+    margin: 0 auto; /* Center the text container */
+    padding: 2rem; /* Add padding around the text */
+    color: black; /* White text for better contrast */
+    font-size: 1.125rem; /* Font size for readability */
+    line-height: 1.6; /* Line height for better readability */
+    background-color: #ffffff; /* Beige background for section 2 */
 }
 
 .banner {
