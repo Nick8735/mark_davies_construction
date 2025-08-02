@@ -17,7 +17,6 @@ html, body {
   color: #333;
 }
 
-
 .navbar-nav .nav-link:hover {
     color: #007bff; /* Blue color on hover for links */
 }
@@ -28,9 +27,7 @@ html, body {
   background-size: cover;
   background-position: center;
   width: 100%;
-  
 }
-
 
 /* Section colors */
 .statement {
@@ -57,7 +54,6 @@ html, body {
   font-size: 1.1rem;
   font-weight: bold;
 }
-
 
 .section_1 h2 {
     font-size: 2rem;
@@ -90,17 +86,15 @@ html, body {
     margin: 0;
 }
 
-
 .section_2 {
-    background-color: #1d5575
-    ; /* Brown for section 2 */
+    background-color: #1d5575; /* Brown for section 2 */
 }
 
 .section_2 .container_2{
     max-width: 800px; /* Limit the width of the text container */
     margin: 0 auto; /* Center the text container */
     padding: 2rem; /* Add padding around the text */
-    color: black; /* White text for better contrast */
+    color: black; /* Black text for better contrast */
     font-size: 1.125rem; /* Font size for readability */
     line-height: 1.6; /* Line height for better readability */
     background-color: #ffffff; /* Beige background for section 2 */
@@ -116,7 +110,7 @@ html, body {
 
 /* Banner-2 adjustments */
 .banner-2 {
-    background-color:#1d5575 ; /* Chartreuse for banner section */
+    background-color: #1d5575; /* Chartreuse for banner section */
     text-align: right;
     padding: 20px; /* Add padding inside banner-2 */
 }
@@ -130,9 +124,10 @@ html, body {
 .banner-2 .navbar-nav {
     margin-right: 30px; /* Add margin on the right side of the navbar */
 }
+
 .slog {
    font-size: 42px;
-   font-family:"'Dancing Script', Consolas, 'Courier New', monospace" ;
+   font-family: "'Dancing Script', Consolas, 'Courier New', monospace";
 }
 
 .video {
@@ -145,15 +140,15 @@ html, body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-
 .slogan {
   font-family: "Charm", cursive;
   font-weight: 700;
   font-style: normal;
-    text-align: center;
-    font-size: 75px;
-    color: #ffffff;
+  text-align: center;
+  font-size: 75px;
+  color: #ffffff;
 }
+
 .charm-regular {
   font-family: "Charm", cursive;
   font-weight: 400;
@@ -165,6 +160,7 @@ html, body {
   font-weight: 700;
   font-style: normal;
 }
+
 /* Style the gallery container as you already have */
 .container.py-5 {
   padding-top: 3rem !important;
@@ -213,6 +209,8 @@ html, body {
   .container.py-5 {
     padding-left: 10px;
     padding-right: 10px;
+    box-shadow: none; /* Optional: simpler on small screens */
+    border-radius: 0;
   }
 
   h2.text-center.mb-4 {
@@ -224,6 +222,50 @@ html, body {
     width: 100%; /* Make sure images fill their container */
     height: auto;
   }
+
+  h2.slogan {
+    font-size: 2rem;
+    padding: 0 10px;
+  }
+
+  p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  /* Stack nav links vertically with spacing */
+  .navbar-nav {
+    flex-direction: column !important;
+    align-items: center;
+    gap: 1.5rem; /* vertical gap between links */
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1.8rem; /* smaller font on mobile */
+    padding: 0.5rem 0;
+  }
+
+  .navbar-brand img {
+    max-width: 120px;
+  }
+
+  .hero_image {
+    min-height: 250px;
+  }
+
+  .video {
+    max-width: 100%;
+    margin: 0 10px 1.5rem 10px;
+    border-radius: 5px;
+  }
+
+  .statement p,
+  .section_1 p,
+  .section_2 p,
+  .banner p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
 }
 
 /* Optional: Slightly larger on tablets */
@@ -232,89 +274,25 @@ html, body {
     flex: 0 0 calc(50% - 1rem); /* 2 columns on tablets */
     max-width: calc(50% - 1rem);
   }
-}
-
-
-h2.slogan {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-
-
-p {
-  max-width: 800px;
-  font-size: 1.125rem;
-  line-height: 1.6;
-  text-align: center;
-  margin: 1rem auto;
-  padding: 0 15px;
-}
-
-/* Navbar adjustments */
-.navbar-brand img {
-  max-width: 150px;
-  height: auto;
-}
-
-/* Hero section */
-.hero_image {
-  min-height: 400px;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-}
-
-/* Media Queries for phones */
-@media (max-width: 767.98px) {
   
-  h2.slogan {
+  /* Slightly smaller navbar links on tablets */
+  .navbar-nav .nav-link {
     font-size: 2rem;
-    padding: 0 10px;
-  }
-  
-
-  
-  p {
-    font-size: 1rem;
-    padding: 0 10px;
-  }
-  
-  .container.py-5 {
-    padding-left: 10px;
-    padding-right: 10px;
-    box-shadow: none; /* Optional: simpler on small screens */
-    border-radius: 0;
+    padding: 0.5rem 1rem;
   }
   
   .navbar-brand img {
-    max-width: 120px;
-  }
-  
-  .hero_image {
-    min-height: 250px;
-  }
-  
-  /* Navbar links stack vertically on small screens */
-  .navbar-nav.ms-auto {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .navbar-nav.ms-auto .nav-link {
-    padding: 0.5rem 0;
+    max-width: 180px;
   }
 }
-/* Base styles for desktop/tablet */
 
+/* Navbar-brand max width for desktop/tablet */
 .navbar-brand img {
   max-width: 250px;
   height: auto;
 }
 
-
-
+/* Statement and section paragraph styles */
 .statement p,
 .section_1 p,
 .section_2 p,
@@ -333,39 +311,4 @@ p {
   background-size: cover;
   background-position: center;
   width: 100%;
-}
-
-/* Media Queries for phones */
-@media (max-width: 767.98px) {
-  
-  .navbar-brand img {
-    max-width: 150px;
-  }
-
-  .navbar-nav.ms-auto {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .navbar-nav.ms-auto .nav-link {
-    padding: 0.5rem 0;
-  }
-
-  .video {
-    max-width: 100%;
-    margin: 0 10px 1.5rem 10px;
-    border-radius: 5px;
-  }
-
-  .statement p,
-  .section_1 p,
-  .section_2 p,
-  .banner p {
-    font-size: 1rem;
-    padding: 0 10px;
-  }
-
-  .hero_image {
-    min-height: 250px;
-  }
 }
