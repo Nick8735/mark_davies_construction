@@ -102,3 +102,29 @@ html, body {
   font-weight: 700;
   font-style: normal;
 }
+/* Style the gallery container as you already have */
+.container.py-5 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+  max-width: 1200px; /* Set a maximum width for the container */
+  margin: 0 auto; /* Center the container */
+  padding-left: 15px; /* Add padding to the left */
+  padding-right: 15px; /* Add padding to the right */
+  background-color: #f8f9fa; /* Light background color for the container */
+  border-radius: 8px; /* Rounded corners for the container */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  overflow: hidden; /* Ensure child elements respect border radius */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  justify-content: center; /* Center children vertically */
+}
+
+/* Add this for the images inside the gallery */
+.container.py-5 .row.g-3 img {
+  width: 100%;           /* Make image fill the column width */
+  height: 250px;         /* Fixed height for uniformity */
+  object-fit: cover;     /* Crop to fit nicely without distortion */
+  border-radius: 8px;    /* Rounded corners to match container */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Optional subtle shadow */
+}
