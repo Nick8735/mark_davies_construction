@@ -3,42 +3,42 @@ html {
   font-size: 16px; /* Keep 16px for default scaling */
 }
 
-/* Reset margins and padding */
+
 html, body {
   margin: 0;
   padding: 0;
-  background-color: #ffffff; /* White background */
+  background-color: #ffffff; 
   font-family: 'Charm', cursive, Arial, sans-serif;
   color: #333;
   line-height: 1.5;
-  font-size: 1rem; /* Use rem units relative to html font-size */
+  font-size: 1rem; 
 }
 
 /* Navbar adjustments */
 .navbar-nav {
-  display: flex !important;  /* Ensure flex is active */
-  gap: 3rem; /* Reduced gap to better fit */
+  display: flex !important;  
+  gap: 3rem; 
 }
 
 .navbar-nav .nav-link {
   font-size: 2.5rem;
-  padding: 0.5rem 0; /* Keep vertical padding, remove horizontal padding */
+  padding: 0.5rem 0; 
   color: #333;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #007bff; /* Blue color on hover */
+  color: #007bff; 
 }
 
 /* Navbar brand image size */
 .navbar-brand img {
-  max-width: 200px; /* Consistent logo size */
+  max-width: 200px; 
   height: auto;
 }
 
 /* Hero image */
 .hero_image {
-  height: 900px; /* Match inline style */
+  height: 900px; 
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -144,8 +144,8 @@ html, body {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   display: flex;
   align-items: center;
-  justify-content: center; /* ✅ Center content horizontally */
-  text-align: center; /* ✅ Center text and inline content */
+  justify-content: center; 
+  text-align: center; 
   padding: 20px;
   gap: 20px;
   flex-wrap: wrap;
